@@ -1,0 +1,37 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+.section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+}
+.section img {
+    position: absolute;
+    width: 120%; /* Make image larger to allow for movement */
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    left: -10%;
+}
+.section:hover img {
+    transform: translateX(10%);
+}
+.overlay {
+    position: relative;
+    z-index: 1;
+}
