@@ -1,67 +1,28 @@
 
     
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Interactive Sections</title>
-      <style>
-          * {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-          }
-          body {
-              display: flex;
-              height: 100vh;
-          }
-          .section {
-              flex: 1;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: relative;
-              color: white;
-              font-size: 2rem;
-              font-family: Arial, sans-serif;
-              overflow: hidden;
-              background: rgba(0, 0, 0, 0.5);
-          }
-          .section img {
-              position: absolute;
-              width: 120%; /* Make image larger to allow for movement */
-              height: 100%;
-              object-fit: cover;
-              transition: transform 0.5s ease-in-out;
-              left: -10%;
-          }
-          .section:hover img {
-              transform: translateX(10%);
-          }
-          .overlay {
-              position: relative;
-              z-index: 1;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="section">
-          <img src="Bark.JPG" alt="Trees">
-          <div class="overlay">Trees</div>
-      </div>
-      <div class="section">
-          <img src="Grass.JPG" alt="Grass">
-          <div class="overlay">Grass</div>
-      </div>
-      <div class="section">
-          <img src="Lake.JPG" alt="Water">
-          <div class="overlay">Water</div>
-      </div>
-      <div class="section">
-          <img src="Ashphalt.JPG" alt="Man">
-          <div class="overlay">Man</div>
-      </div>
-  </body>
-  </html>
-  
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Sections</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="section" style="background: #654321;">
+                <img src="images/Bark.jpg" alt="Trees">
+                <div class="overlay">Trees</div>
+            </div>
+            <div class="section" style="background: #228B22;">
+                <img src="images/Grass.jpg" alt="Grass">
+                <div class="overlay">Grass</div>
+            </div>
+            <div class="section" style="background: #1E90FF;">
+                <img src="images/Lake.jpg" alt="Water">
+                <div class="overlay">Water</div>
+            </div>
+            <div class="section" style="background: #555555;">
+                <img src="images/Ashphalt.jpg" alt="Man">
+                <div class="overlay">Man</div>
+            </div>
+        </body>
+        </html>
