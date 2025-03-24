@@ -1,0 +1,87 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Anonymous Pro", monospace;
+            font-weight: 400;
+            font-style: normal;
+            background: url('images/Bark.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(245, 222, 179, 0.9);
+            padding: 20px;
+            
+        }
+        .header {
+            background: rgb(46, 37, 24);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+        }
+        .button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            background: lightgray;
+            text-decoration: none;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: darkgray;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-grid img {
+            width: 90%;
+            height: auto;
+        }
+        .center-column {
+            width: 50%;
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .center-column img {
+            width: 90%;
+            height: auto;
+
+        }
+        .audio-container, .model-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .audio-container audio, .model-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 80px;
+            background: gray;
+        }
+        .model-container iframe {
+            height: 300px;
+        }
+
+        .footer {
+            color: white;
+        }
+        
