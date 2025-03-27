@@ -26,6 +26,9 @@ body {
 .section:hover {
     filter: brightness(70%);
 }
+.footer {
+    color: white;
+}
 .section img {
     position: absolute;
     width: 140%; /* Make image larger to allow for movement */
